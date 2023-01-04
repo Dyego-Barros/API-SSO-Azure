@@ -12,13 +12,16 @@ router.get('/',(req,res)=>{
 
 router.get('/login/:id', (req,res,next)=>{
     if(isNaN(req.params.id)){
-        res.sendStatus(400);
-
+        res.render('error_id.ejs');
     }else{
         const license= [];
        getLicense.getid(req.params.id)
        .then(response =>{
-            const license = response
+            const license = response;
+        
+           if(license.length <= 0){
+            res.render('error_id.ejs');
+           }else{
             const dateLicense = new Date(license[0]['dataexp']);
             var today = new Date();
             if(today < dateLicense){
@@ -26,6 +29,8 @@ router.get('/login/:id', (req,res,next)=>{
             }else{
                 res.render('error.ejs');
             }
+           }
+           
 
        })       
        .catch(err => console.log(err));     
