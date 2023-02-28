@@ -4,7 +4,7 @@ const { QueryTypes}= require('sequelize');
 
 module.exports={
     getid: async function(id){
-        const idEnterprise = await sequelize.query(`SELECT * FROM public."client" WHERE id=${id}`,{type:QueryTypes.SELECT});
+        const idEnterprise = await sequelize.query(`SELECT * FROM ProvedoresConexoes WHERE id=${id}`,{type:QueryTypes.SELECT});
       if(idEnterprise){
          return idEnterprise;
       }else{

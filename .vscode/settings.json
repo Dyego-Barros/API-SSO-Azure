@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "DYEGO\\SQLEXPRESS",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "DYEGO\\SQLEXPRESS",
+            "database": "Empresa",
+            "username": "DYEGO\\gabut",
+            "password": ""
+        }
+    ]
+}

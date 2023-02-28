@@ -1,19 +1,22 @@
+
 {
+    
     "Config Database":{
-        "database":"sso",
-        "username":"postgres",
-        "password":"@Portotec#2022@#",
-        "host":"89.116.225.21",
-        "dialect":"postgres",
-        "port":"5432"
+        "database":"prov_s2_autenticacao",
+        "username":"prov_s2_user",
+        "password":"s2_root",
+        "host":"191.101.235.139",
+        "dialect":"mysql",
+        "port":"3306"
+
         
     },
 
     "ConfigStrategyAzure":{
-        "entryPoint":"https://login.microsoftonline.com/26cfacb5-83b9-42ae-9959-32a822d4c877/saml2",
-        "issuer": "https://www.portopabx.com.br:2000/",
-        "callbackUrl":"https://www.portopabx.com.br:2000/azure/callback",
-        "cert":"MIIC8DCCAdigAwIBAgIQQbiHklCF5LhBkDcetqbDLTANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMjExMjkwOTQyMjFaFw0yNTExMjkwOTQyMjNaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuz7OYvmPdE0hLW/vSfU/LH2STEx0dADDJkecX6q051Qd9R+zW3mSOIu6zjFvWp+H55Y83yFR83fJ5NrrkqkBlrQvFlml0Cly3++wHLeM/dQ0GqtC9ljPCCndGFDk1R6n5Ilqh5p+Hc45Xjo+J+0LPhYzqRw+/Y/uvjP+18+ZLWGMN0bKOq2Ef/k8FV3JNVszNPdnqsSHtSkCYa1+PxEM9uATjetkCY5CncojS7AbdYDlU8mHHbPoADwvC8FTkP+lQx/c5FhVhIa7aw4njE4OwG+29IkoFlA1Or2cCG7x/WeTGkSrlLrWywBCqnSwvpTpMbwnNELPdQCp+iwFK81qiQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAlRAssgvh8dL4iJQz/JwiAY5PE2SWqzk0oL/9EagKMDxYF+IOF4ujepzh2a74PflVAb3iHFHyEx8LhvV7p6/xtpegcgdltmDEio5HElYE2pKugftDfi4Y1XlXvy7Wpwf6aCF/fLKXkwro0O9iDhzpHeYVrF5O9vKddp6KuW7OvWRdTQqtU1IsNdXUxqOJi96RhD0U5zbWbi9PqHsXyDPXFfLeGrDBo8LEKspqNtaiv7EWj8Gaf8U5JaTNznrDGgDVctvqo+OHiFYq5SRrNxxVdhYY0prN7lzQfSNqlrrF43KT7wSMMCEzlHj+iUY1xG/6OJey7Ifw9sIp7KDpVKjuO",
+        "entryPoint":"https://login.microsoftonline.com/{TENANTID}/saml2",
+        "issuer": "",
+        "callbackUrl":"",
+        "cert":"",
         "authnContext":"http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password"
     }
 }
